@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/profile_icon"
+            android:title="@string/menu_profile" />
+        <item
+            android:id="@+id/nav_network"
+            android:icon="@drawable/network_icon"
+            android:title="@string/menu_network" />
+        <item
+            android:id="@+id/nav_business"
+            android:icon="@drawable/business_icon"
+            android:title="@string/menu_business" />
+
+        <item
+            android:id="@+id/nav_merchant"
+            android:icon="@drawable/merchant_icon"
+            android:title="@string/menu_merchant" />
+        <item
+            android:id="@+id/nav_dating"
+            android:icon="@drawable/heart_icon"
+            android:title="@string/menu_dating" />
+
+        <item
+            android:id="@+id/nav_matrimony"
+            android:icon="@drawable/ring_icon"
+            android:title="@string/menu_matrimony" />
+
+        <item
+            android:id="@+id/nav_jobs"
+            android:icon="@drawable/jobs_icon"
+            android:title="@string/menu_jobs" />
+
+        <item
+            android:id="@+id/nav_location"
+            android:icon="@drawable/location_icon"
+            android:title="@string/menu_locations" />
+
+    </group>
+</menu>

@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RefineActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Select Your Availability"
+        android:textColor="@color/purple_500"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.092"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_margin="20dp"
+
+        android:background="@drawable/spinner_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Add Your Status"
+        android:textColor="@color/purple_500"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/spinner1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/spinner1"
+        app:layout_constraintTop_toBottomOf="@+id/spinner1" />
+
+    <EditText
+        android:id="@+id/statusTxt"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_margin="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:inputType="textMultiLine"
+        android:background="@drawable/spinner_bg"
+        android:text="@string/statusEdtTxt"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+
+    <TextView
+        android:id="@+id/word_count_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/statusTxt"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="8dp"
+        android:text="47/250"
+        android:textColor="@color/purple_500"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/statusTxt"
+        app:layout_constraintHorizontal_bias="0.971"
+        app:layout_constraintStart_toStartOf="@+id/statusTxt"
+        app:layout_constraintTop_toBottomOf="@+id/statusTxt" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Select Hyper local Distance"
+        android:textColor="@color/purple_500"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/statusTxt"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/statusTxt"
+        app:layout_constraintTop_toBottomOf="@+id/statusTxt" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="30dp"
+        android:max="100"
+        android:progress="50"
+        android:progressTint="@color/purple_500"
+        android:thumbTint="@color/purple_500"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.521"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1 km"
+        android:textColor="@color/purple_500"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/seekBar"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="100 km"
+        android:textColor="@color/purple_500"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/seekBar"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:text="Select Purpose"
+        android:textColor="@color/purple_500"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView7">
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/toggle_button_bg"
+            android:checked="true"
+            android:textAllCaps="false"
+            android:textColor="@color/toggle_button_text_color"
+            android:textOff="Coffee"
+            android:textOn="Coffee"
+            android:textSize="14sp" />
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/toggle_button_bg"
+            android:checked="true"
+            android:textAllCaps="false"
+            android:textColor="@color/toggle_button_text_color"
+            android:textOff="Business"
+            android:textOn="Business"
+            android:textSize="14sp" />
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/toggle_button_bg"
+            android:checked="false"
+            android:textAllCaps="false"
+            android:textColor="@color/toggle_button_text_color"
+            android:textOff="Hobbies"
+            android:textOn="Hobbies"
+            android:textSize="14sp" />
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/toggle_button_bg"
+            android:checked="false"
+            android:textAllCaps="false"
+            android:textColor="@color/toggle_button_text_color"
+            android:textOff="Dating"
+            android:textOn="Dating"
+            android:textSize="14sp" />
+
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/radioGroup1"
+        app:layout_constraintVertical_bias="0.0" >
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOn="Friendship"
+            android:textOff="Friendship"
+            android:textSize="14sp"
+            android:background="@drawable/toggle_button_bg"
+            android:textColor="@color/toggle_button_text_color"
+            android:textAllCaps="false"
+            android:checked="true"/>
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOn="Matrimony"
+            android:textOff="Matrimony"
+            android:textSize="14sp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/toggle_button_bg"
+            android:textColor="@color/toggle_button_text_color"
+            android:textAllCaps="false"
+            android:checked="false"/>
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOn="Dinning"
+            android:textOff="Dinning"
+            android:textSize="14sp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/toggle_button_bg"
+            android:textColor="@color/toggle_button_text_color"
+            android:textAllCaps="false"
+            android:checked="false"/>
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOn="Movies"
+            android:textOff="Movies"
+            android:textSize="14sp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/toggle_button_bg"
+            android:textColor="@color/toggle_button_text_color"
+            android:textAllCaps="false"
+            android:checked="false"/>
+
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/saveExploreBtn"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Save &amp; Explore"
+        android:layout_marginTop="35dp"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:background="@drawable/explore_btn_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup2" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

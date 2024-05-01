@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">NextclanUI</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Your Name</string>
+    <string name="nav_header_subtitle">Your profile ID</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_profile">My Profile</string>
+    <string name="menu_network">My Network</string>
+    <string name="menu_business">Switch to Business</string>
+    <string name="menu_merchant">Switch to Merchant</string>
+    <string name="menu_dating">Dating</string>
+    <string name="menu_matrimony">Matrimony</string>
+    <string name="menu_jobs">Jobs</string>
+    <string name="menu_locations">Live Locations</string>
+    <string name="statusEdtTxt">Hi community! I am open to new connections \'😊\'</string>
+    <string name="infoText">About myself! I am a beginner android developer with more than one year of experience in developing applications</string>
+</resources>
